@@ -52,7 +52,7 @@
             }
         }
 
-        a {
+        a{
             position: absolute;
             bottom: 10px;
             left: 50%;
@@ -60,10 +60,10 @@
             img {
                 width: 30px;
             }
-        }
 
-        a:hover {
-            animation: bounce 1s infinite;
+            &:hover {
+                animation: bounce 1s infinite;
+            }
         }
     }
 
