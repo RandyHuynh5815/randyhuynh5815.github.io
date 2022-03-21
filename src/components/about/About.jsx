@@ -21,6 +21,9 @@ export default function About() {
               machine learning, data science, web development and computer science education.
             </p>
         </div>
+        <a href="#portfolio">
+          <img src="assets/down.png" alt=""></img>
+        </a>
       </div>
       <div className="right">
         <div className='imageContainer'>
