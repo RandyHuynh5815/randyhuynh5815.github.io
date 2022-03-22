@@ -11,7 +11,7 @@ export default function Topbar() {
         <div className="right">
           <a href="#about" className="link">About</a>
           <a href="#portfolio" className="link">Portfolio</a>
-          <a href="#works" className="link">Works</a>
+          <a href="#works" className="link">Work Experience</a>
           <a href="#contact" className="link">Contact</a>
         </div>
       </div>

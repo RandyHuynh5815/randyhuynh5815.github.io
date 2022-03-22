@@ -1,3 +1,80 @@
+@import "../../global.scss";
+
 .works {
-    background-color: lightgreen;
+    background: linear-gradient(90deg,#1c3385, #118afb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    #title {
+        color: white;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    .timeline {
+        width: 900px;
+        overflow: hidden;
+
+        .container {
+            height: 275px;
+            width: 750px;
+            display: flex;
+            position: relative;
+            justify-content: center;
+
+            .timelineItem {
+                display: flex;
+                height: 100%;
+                width: 95%;
+                position: absolute;
+    
+                .left {
+                    flex: 0.6;
+                    height: 80%;
+    
+                    .leftContainer {
+                        width: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        overflow: hidden;
+                    }
+                }
+    
+                .right {
+                    flex: 0.4;
+                    display: flex;
+                    align-items: center;
+                    
+                    .imgContainer {
+                        height: 90%;
+                        width: 100%;
+                        overflow: hidden;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #arrow {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+
+        img {
+            width: 30px;
+        }
+
+        &:hover {
+            animation: bounce 1s infinite;
+        }
+    }
 }
