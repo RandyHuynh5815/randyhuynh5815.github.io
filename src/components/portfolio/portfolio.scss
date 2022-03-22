@@ -35,6 +35,7 @@
                 justify-content: center;
                 color: white;
                 position: relative;
+                transition: all 1s ease;
     
                 h3 {
                     position: absolute;
@@ -52,6 +53,7 @@
     
                 &:hover {
                     background-color: #2a1e5c;
+                    transform: scale(1.1);
                     img {
                         opacity: 0.2;
                         z-index: 0;
