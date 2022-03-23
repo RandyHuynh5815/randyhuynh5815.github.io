@@ -12,11 +12,30 @@
         color: white;
         font-size: 50px;
         margin-bottom: 10px;
+        text-align: center;
+
+        @include small-phone {
+            font-size: 40px;
+            margin-bottom: 8px;
+        }
+
+        @include large-phone {
+            font-size: 45px;
+            margin-bottom: 8px;
+        }
     }
 
     .timeline {
         width: 900px;
         overflow: hidden;
+
+        @include small-phone {
+            width: 275px;
+        }
+
+        @include large-phone {
+            width: 300px;
+        }
 
         .container {
             height: 275px;
@@ -24,6 +43,16 @@
             display: flex;
             position: relative;
             justify-content: center;
+
+            @include small-phone {
+                height: 125px;
+                width: 225px;
+            }
+
+            @include large-phone {
+                height: 175px;
+                width: 250px;
+            }
 
             .timelineItem {
                 display: flex;
@@ -40,6 +69,40 @@
                         display: flex;
                         flex-direction: column;
                         overflow: hidden;
+
+                        @include small-phone {
+                            h2 {
+                                font-size: 13px;
+                                line-height: 10pt;
+                                padding-bottom: 5px;
+                            }
+
+                            h3 {
+                                font-size: 10px;
+                                line-height: 7pt;
+                            }
+
+                            p {
+                                display: none;
+                            }
+                        }
+
+                        @include large-phone {
+                            h2 {
+                                font-size: 17.5px;
+                                line-height: 12pt;
+                                padding-bottom: 5px;
+                            }
+
+                            h3 {
+                                font-size: 13px;
+                                line-height: 10pt;
+                            }
+
+                            p {
+                                display: none;
+                            }
+                        }
                     }
                 }
     
@@ -75,6 +138,14 @@
 
         &:hover {
             animation: bounce 1s infinite;
+        }
+
+        @include small-phone {
+            display: none;
+        }
+
+        @include large-phone {
+            display: none;
         }
     }
 }

@@ -8,6 +8,11 @@
     display: flex;
     justify-content: center;
 
+    @include large-phone {
+        align-items: center;
+        flex-direction: column;
+    }
+
     .text {
         position: absolute;
         display: flex;
@@ -15,23 +20,64 @@
         align-items: center;
         top: 20vh;
 
+        @include large-phone {
+            gap: 5vh;
+        }
+
         h2 {
             font-size: 60px;
+            text-align: center;
+
+            @include small-phone {
+                font-size: 30px;
+            }
+
+            @include large-phone {
+                font-size: 40px;
+            }
         }
 
         h1 {
             font-size: 150px;
             margin: 10px 0;
+            text-align: center;
+
+            @include small-phone {
+                font-size: 75px;
+            }
+
+            @include large-phone {
+                font-size: 85px;
+            }
         }
 
         h3 {
             font-size: 45px;
             margin: 10px 0;
+            text-align: center;
+
+            @include small-phone {
+                font-size: 25px;
+            }
+
+            @include large-phone {
+                font-size: 30px;
+                margin: 5px 0;
+            }
         }
 
         span {
             font-size: 45px;
             color: #2a1e5c;
+            text-align: center;
+
+            @include small-phone {
+                font-size: 25px;
+            }
+
+            @include large-phone {
+                font-size: 30px;
+            }
         }
     }
 
@@ -46,6 +92,14 @@
 
         &:hover {
             animation: bounce 1s infinite;
+        }
+
+        @include small-phone {
+            display: none;
+        }
+
+        @include large-phone {
+            display: none;
         }
     }
 }

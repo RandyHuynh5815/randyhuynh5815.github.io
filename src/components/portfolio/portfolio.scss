@@ -12,10 +12,28 @@
         position: absolute;
         top: 7.5vh;
 
+        @include small-phone {
+            top: 5vh;
+        }
+
+        @include large-phone {
+            top: 5vh;
+        }
+
         h1 {
             font-size: 50px;
             text-align: center;
             margin: 10px 0;
+
+            @include small-phone {
+                font-size: 30px;
+                margin: 5px 0;
+            }
+
+            @include large-phone {
+                font-size: 30px;
+                margin: 5px 0;
+            }
         }
     
         .itemContainer {
@@ -36,12 +54,30 @@
                 color: white;
                 position: relative;
                 transition: all 1s ease;
+
+                @include small-phone {
+                    width: 145px;
+                    height: 90px;
+                }
+
+                @include large-phone {
+                    width: 200px;
+                    height: 115px;
+                }
     
                 h3 {
                     position: absolute;
                     font-size: 20px;
                     display: none;
                     text-align: center;
+
+                    @include small-phone {
+                        font-size: 12.5px;
+                    }
+
+                    @include large-phone {
+                        font-size: 15px;
+                    }
                 }
     
                 img {
@@ -78,6 +114,14 @@
 
         &:hover {
             animation: bounce 1s infinite;
+        }
+
+        @include small-phone {
+            display: none;
+        }
+
+        @include large-phone {
+            display: none;
         }
     }
 }

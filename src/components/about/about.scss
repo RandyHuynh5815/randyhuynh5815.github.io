@@ -17,6 +17,16 @@
             justify-content: center;
             align-items: center;
 
+            @include small-phone {
+                width: 100px;
+                height: 100px;
+            }
+
+            @include large-phone {
+                width: 110px;
+                height: 110px;
+            }
+
             img {
                 height: 90%;
                 width: 95%;
@@ -40,19 +50,48 @@
             justify-content: center;
             top: 10vh;
 
+            @include small-phone {
+                top: 5vh;
+            }
+
+            @include large-phone {
+                top: 5vh
+            }
+
             h2 {
                 font-size: 50px;
                 margin: 10px 0;
+                text-align: center;
+
+                @include small-phone {
+                    font-size: 30px;
+                    margin: 5px;
+                }
+
+                @include large-phone {
+                    font-size: 35px;
+                    margin: 5px;
+                }
             }
 
             p {
                 font-size: 25px;
                 text-align: center;
                 line-height: 30pt;
+
+                @include small-phone {
+                    font-size: 12.5px;
+                    line-height: 15pt;
+                }
+
+                @include large-phone {
+                    font-size: 15.5px;
+                    line-height: 16pt;
+                }
             }
         }
 
-        a{
+        a {
             position: absolute;
             bottom: 10px;
             left: 50%;
@@ -63,6 +102,14 @@
 
             &:hover {
                 animation: bounce 1s infinite;
+            }
+
+            @include small-phone {
+                display: none;
+            }
+
+            @include large-phone {
+                display: none;
             }
         }
     }
@@ -79,6 +126,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @include small-phone {
+                width: 100px;
+                height: 100px;
+            }
+
+            @include large-phone {
+                width: 110px;
+                height: 110px;
+            }
 
             img {
                 height: 90%;

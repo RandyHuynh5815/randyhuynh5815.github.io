@@ -35,6 +35,14 @@
                 text-decoration: none;
                 color: inherit;
             }
+
+            @include small-phone {
+                display: none;
+            }
+
+            @include large-phone {
+                display: none;
+            }
         }
     }
 }

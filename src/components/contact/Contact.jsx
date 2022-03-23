@@ -1,8 +1,6 @@
 import React from "react";
 import './contact.scss'
 import EmailIcon from '@mui/icons-material/Email';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import ArticleIcon from '@mui/icons-material/Article';
 
 export default function Contact() {
   return (
@@ -13,7 +11,7 @@ export default function Contact() {
       <div className="right">
         <h2>Let's keep in touch</h2>
         <div className="emailContainer">
-          <EmailIcon fontSize="large"/>
+          <img src="assets/mail.png"/>
           <span>randyhuynh5815@gmail.com</span>
         </div>
         <div className="buttonRow">
@@ -21,10 +19,10 @@ export default function Contact() {
             <img src="assets/linkedin.png"></img>
           </a>
           <a href="https://github.com/RandyHuynh5815">
-            <GitHubIcon sx={{fontSize: 50, color: "black"}}/>
+            <img src="assets/github.png"/>
           </a>
           <a href="https://randyhuynh5815.github.io/fellowship-website/resume.pdf">
-            <ArticleIcon sx={{fontSize: 50, color: "black"}}/>
+            <img src="assets/file_icon.png"/>
           </a>
         </div>
       </div>

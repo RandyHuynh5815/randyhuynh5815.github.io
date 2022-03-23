@@ -5,3 +5,15 @@ $mainColor:#008b8b;
     50%  { transform: translateY(-10px); }
     100% { transform: translateY(0); }
 }
+
+@mixin small-phone {
+    @media (max-width: 389px) {
+        @content;
+    }
+}
+
+@mixin large-phone {
+    @media (min-width: 390px) and (max-width: 420px) {
+        @content;
+    }
+}
