@@ -13,7 +13,14 @@ $mainColor:#008b8b;
 }
 
 @mixin large-phone {
-    @media (min-width: 390px) and (max-width: 420px) {
+    @media (min-width: 390px) and (max-width: 500px) {
         @content;
     }
 }
+
+// Max breaking points from normal
+// Intro - 910px
+// About - 1320px
+// Portfolio - 1165px
+// Work Experience - 910px
+// Contact - 1040px
