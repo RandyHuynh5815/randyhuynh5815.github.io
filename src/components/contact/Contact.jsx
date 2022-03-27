@@ -21,7 +21,7 @@ export default function Contact() {
           <a href="https://github.com/RandyHuynh5815">
             <img src="assets/github.png"/>
           </a>
-          <a href="https://randyhuynh5815.github.io/resume.pdf">
+          <a href="https://randyhuynh5815.github.io/resume/">
             <img src="assets/file_icon.png"/>
           </a>
         </div>
