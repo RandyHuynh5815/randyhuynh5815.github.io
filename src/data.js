@@ -154,7 +154,7 @@ export const work = [
     },
     {
       title: "April 2022",
-      cardTitle: "Research Assistant for Michael Shindler (Future Position)",
+      cardTitle: "Research Assistant for Michael Shindler",
       cardSubtitle: "Information and Computer Sciences, University of California, Irvine",
       cardDetailedText: `Explored how computer science is taught in colleges around the US. Written a research paper
                           with 7 other co-authors about the distribution of algorithm topics
