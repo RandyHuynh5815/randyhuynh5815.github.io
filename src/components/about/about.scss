@@ -75,17 +75,17 @@
             }
 
             p {
-                font-size: 25px;
+                font-size: 20px;
                 text-align: center;
                 line-height: 30pt;
 
                 @include small-phone {
-                    font-size: 12.5px;
+                    font-size: 7.5px;
                     line-height: 15pt;
                 }
 
                 @include large-phone {
-                    font-size: 15.5px;
+                    font-size: 10.5px;
                     line-height: 16pt;
                 }
             }

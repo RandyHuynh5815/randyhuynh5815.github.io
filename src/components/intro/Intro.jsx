@@ -10,7 +10,8 @@ export default function Intro() {
       showCursor: false,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Data Science", "Artificial Intelligence", "Machine Learning", "Web Development", "Computer Science Education"]
+      strings: ["Data Science", "Artificial Intelligence", "Machine Learning", 
+      "Web Development", "Computer Science Education", "Natural Language Processing"]
     })
   }, [])
 
